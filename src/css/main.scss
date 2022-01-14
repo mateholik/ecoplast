@@ -1,0 +1,24 @@
+@import "reset.scss";
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+$primary: "#3F71D3";
+
+.container {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+}
