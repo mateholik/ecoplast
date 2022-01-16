@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="build/css/style.css">
   <title>Document</title>
 </head>
@@ -15,7 +18,7 @@
 				<div class="logo">
 					<img src="./src/img/logo.svg" alt="logo">
 				</div>
-				<nav>
+				<nav class="desktop">
 					<ul>
 						<li>
 							<a href="#">Katalogas</a>
@@ -28,9 +31,71 @@
 						</li>
 					</ul>
 				</nav>
+				<button id="hamburger" class="hamburger hamburger--vortex" type="button">
+					<span class="hamburger-box">
+						<span class="hamburger-inner"></span>
+					</span>
+				</button>
 			</div>
 		</div>
   </header>
+
+	<section class="hero">
+		<div class="slider">
+			<div class="slider--arrows">
+				<div class="container">
+					<div class="arrow arrow--left">
+						<img src="./src/img/slider-arrow.svg" alt="arrow left">
+					</div>
+					<div class="arrow arrow--right">
+						<img src="./src/img/slider-arrow.svg" alt="arrow right">
+					</div>
+				</div>
+			</div>
+			<div class="slider--dots">
+				<div class="dot dot--active"></div>
+				<div class="dot"></div>
+				<div class="dot"></div>
+			</div>
+			<div class="slide" style="background-image: url('./src/img/hero-slide-1.jpeg');">
+				<div class="container">
+					<h1>MONOLITINIS POLIKARBONATAS STATYBOMS</h1>
+					<span>Naujos kartos alternatyva grūdintam stiklui</span>
+					<div class="btn-holder">
+						<button class="btn">
+							Plačiau
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="alternative">
+		<div class="container">
+			<h2>
+				NAUJOS KARTOS ALTERNATYVA GRŪDINTAM STIKLUI
+			</h2>
+			<div class="content">
+				<p>Monolitinis Polikarbonatas yra tvirčiausia skaidri medžiaga, turinti itin platų panaudojimo spektrą – terasos, stoginės, interjero elementai, balkonų stiklinimas, baldai, garso izoliacijos ir saugumo instaliacijos. Trumpai tariant – ji pilnai naudojama vietoj stiklo, plastiko ar kanalinio polikarbonato.
+					<br>
+					Išvenkite sudėtingo montavimo, transportavimo ir broko rizikos, gamyboje vietoje stiklo ar įprasto kanalinio polikarbonato naudodami monolitino polikarbonato plokštes. 
+					<br>
+					Net 250 kartų tvirtesnė ir 2 kartus lengvesnė už grūdintą stiklą - apsaugo konstrukciją nuo per didelės apkrovos, gamtos stichijų ir cheminių medžiagų poveikio. Itin lengvai apdirbama, pjaustoma, montuojama ir formuojama. Nėra rizikos sugadinti transportuojant. 
+				</p>
+			</div>
+			<div class="wrap">
+				<div>
+					<img src="./src/img/alternative-1.jpeg" alt="img">
+				</div>
+				<div>
+					<img src="./src/img/alternative-2.jpeg" alt="img">
+				</div>
+			</div>
+			<div class="btn-holder">
+				<a href="#" class="btn">Katalogas</a>
+			</div>
+		</div>
+	</section>
 	
   <script src="build/js/script.js"></script>
 </body>

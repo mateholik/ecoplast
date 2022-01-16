@@ -12,7 +12,6 @@ const sass = require('gulp-sass');
 
 // Connection order of the sass/scss-files
 const cssFiles = [
-   './src/css/reset.scss',
    './src/css/main.scss'
 ];
 

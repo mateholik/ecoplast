@@ -1,39 +1,132 @@
 @import "reset.scss";
-
-@mixin phone {
-  @media (max-width: 768px) {
-    @content;
+@import "global.scss";
+section {
+  @include sectionSpacing;
+  h2 {
+    @include secionTitle;
   }
 }
-@mixin center($justify: flex-start, $align: center) {
-  display: flex;
-  justify-content: $justify;
-  align-items: $align;
-}
-$primary: "#3F71D3";
 
-* {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-html {
-  font-size: 62.5%;
-}
-body {
-  font-size: 1.6rem;
-}
-img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-.container {
-  max-width: 1240px;
-  width: 100%;
-  margin: 0 auto;
-}
 header {
+  background: $primary;
+  height: 6rem;
+  @include phone {
+    height: 5rem;
+  }
+  .container {
+    height: 100%;
+  }
   .wrap {
     @include center(space-between);
+    height: 100%;
+  }
+  .logo {
+    width: 14rem;
+    @include phone {
+      width: 10rem;
+    }
+  }
+  nav.desktop {
+    @include phone {
+      display: none;
+    }
+    ul {
+      @include center;
+      li {
+        &:not(:last-of-type) {
+          margin-right: 8rem;
+        }
+      }
+      a {
+        color: white;
+        font-size: 1.8rem;
+        font-weight: 700;
+      }
+    }
+  }
+}
+.hero {
+  padding: 0;
+  .slider {
+    position: relative;
+    &--arrows {
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &--dots {
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 3rem;
+      @include phone {
+        bottom: 1rem;
+      }
+    }
+    .slide {
+      padding: 16rem 0;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      @include phone {
+        padding: 3.5rem 0;
+      }
+      h1 {
+        font-weight: 700;
+        font-size: 6.4rem;
+        line-height: 8.2rem;
+        text-align: center;
+        margin-bottom: 1.5rem;
+        color: #fff;
+        @include phone {
+          font-size: 2.6rem;
+          line-height: 3.2rem;
+          margin-bottom: 2rem;
+        }
+      }
+      span {
+        display: block;
+        font-weight: 700;
+        font-size: 2.8rem;
+        line-height: 3.6rem;
+        text-align: center;
+        margin-bottom: 3.5rem;
+        color: #fff;
+        @include phone {
+          display: none;
+        }
+      }
+      .btn-holder {
+        @include center(center);
+      }
+    }
+  }
+}
+.alternative {
+  .content {
+    margin-bottom: 2rem;
+    text-align: justify;
+  }
+  .wrap {
+    @include center;
+    margin-bottom: 4rem;
+    @include phone {
+      flex-direction: column;
+    }
+    div {
+      width: 50%;
+      @include phone {
+        width: 100%;
+      }
+      &:first-of-type {
+        margin-right: 4rem;
+        @include phone {
+          margin-right: 0;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+  .btn-holder {
+    @include center;
   }
 }
