@@ -22,9 +22,9 @@ $hamburger-layer-border-radius: 0;
   }
 }
 @mixin sectionSpacing {
-  padding: 3.5rem 0;
+  margin-bottom: 7rem;
   @include phone {
-    padding: 2rem 0;
+    margin-bottom: 3rem;
   }
 }
 @mixin center($justify: center, $align: center) {

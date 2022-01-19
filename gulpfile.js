@@ -3,9 +3,10 @@ const gulp = require('gulp');
 const concat = require('gulp-concat');
 const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
-const uglify = require('gulp-uglify');
+// const uglify = require('gulp-uglify');
 const del = require('del');
 const browserSync = require('browser-sync').create();
+const terser = require('gulp-terser');
 
 const sourcemaps = require('gulp-sourcemaps');
 const sass = require('gulp-sass');
@@ -46,9 +47,10 @@ function scripts() {
    //Merge files into one
    .pipe(concat('script.js'))
    //JS minification
-   .pipe(uglify({
-      toplevel: true
-   }))
+   // .pipe(uglify({
+   //    toplevel: true
+   // }))
+   .pipe(terser())
    //Output folder for scripts
    .pipe(gulp.dest('./build/js'))
    .pipe(browserSync.stream());
