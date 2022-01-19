@@ -1,251 +1,357 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="build/css/style.css">
-  <title>Document</title>
-</head>
-<body>
-   
-  <header>
-		<div class="container">
-			<div class="wrap">
-				<div class="logo">
-					<img src="./src/img/logo.svg" alt="logo">
-				</div>
-				<nav class="desktop">
-					<ul>
-						<li>
-							<a href="#">Katalogas</a>
-						</li>
-						<li>
-							<a href="#">Naudojimo būdai</a>
-						</li>
-						<li>
-							<a href="#">Kontaktai</a>
-						</li>
-					</ul>
-				</nav>
-				<button id="hamburger" class="hamburger hamburger--vortex" type="button">
-					<span class="hamburger-box">
-						<span class="hamburger-inner"></span>
-					</span>
-				</button>
-			</div>
-		</div>
-		<nav id="mobileMenu" class="mobile">
-			<ul>
-				<li>
-					<a href="#">Katalogas</a>
-				</li>
-				<li>
-					<a href="#">Naudojimo būdai</a>
-				</li>
-				<li>
-					<a href="#">Kontaktai</a>
-				</li>
-			</ul>
-		</nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="build/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="wrap">
+          <div class="logo">
+            <img src="./src/img/logo.svg" alt="logo" />
+          </div>
+          <nav class="desktop">
+            <ul>
+              <li>
+                <a href="#">Katalogas</a>
+              </li>
+              <li>
+                <a href="#">Naudojimo būdai</a>
+              </li>
+              <li>
+                <a href="#">Kontaktai</a>
+              </li>
+            </ul>
+          </nav>
+          <button
+            id="hamburger"
+            class="hamburger hamburger--vortex"
+            type="button"
+          >
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
+        </div>
+      </div>
+      <nav id="mobileMenu" class="mobile">
+        <ul>
+          <li>
+            <a href="#">Katalogas</a>
+          </li>
+          <li>
+            <a href="#">Naudojimo būdai</a>
+          </li>
+          <li>
+            <a href="#">Kontaktai</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-	<section class="hero">
-		<div class="slider">
-			<div class="slider--arrows">
-				<div class="container">
-					<div class="arrow arrow--left">
-						<img src="./src/img/slider-arrow.svg" alt="arrow left">
-					</div>
-					<div class="arrow arrow--right">
-						<img src="./src/img/slider-arrow.svg" alt="arrow right">
-					</div>
-				</div>
-			</div>
-			<div class="slider--dots">
-				<div class="dot dot--active"></div>
-				<div class="dot"></div>
-				<div class="dot"></div>
-			</div>
-			<div class="slide" style="background-image: url('./src/img/hero-slide-1.jpeg');">
-				<div class="container">
-					<h1>MONOLITINIS POLIKARBONATAS STATYBOMS</h1>
-					<span>Naujos kartos alternatyva grūdintam stiklui</span>
-					<div class="btn-holder">
-						<button class="btn">
-							Plačiau
-						</button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+    <div class="lander">
+      <section class="hero">
+        <div class="slider">
+          <div class="slider--arrows">
+            <div class="container">
+              <div class="arrow arrow--left">
+                <img src="./src/img/slider-arrow.svg" alt="arrow left" />
+              </div>
+              <div class="arrow arrow--right">
+                <img src="./src/img/slider-arrow.svg" alt="arrow right" />
+              </div>
+            </div>
+          </div>
+          <div class="slider--dots">
+            <div class="dot dot--active"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+          <div
+            class="slide"
+            style="background-image: url('./src/img/hero-slide-1.jpeg')"
+          >
+            <div class="container">
+              <h1>MONOLITINIS POLIKARBONATAS STATYBOMS</h1>
+              <span>Naujos kartos alternatyva grūdintam stiklui</span>
+              <div class="btn-holder">
+                <button class="btn">Plačiau</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-	<section class="alternative">
-		<div class="container">
-			<h2>
-				NAUJOS KARTOS ALTERNATYVA GRŪDINTAM STIKLUI
-			</h2>
-			<div class="content">
-				<p>Monolitinis Polikarbonatas yra tvirčiausia skaidri medžiaga, turinti itin platų panaudojimo spektrą – terasos, stoginės, interjero elementai, balkonų stiklinimas, baldai, garso izoliacijos ir saugumo instaliacijos. Trumpai tariant – ji pilnai naudojama vietoj stiklo, plastiko ar kanalinio polikarbonato.
-					<br>
-					Išvenkite sudėtingo montavimo, transportavimo ir broko rizikos, gamyboje vietoje stiklo ar įprasto kanalinio polikarbonato naudodami monolitino polikarbonato plokštes. 
-					<br>
-					Net 250 kartų tvirtesnė ir 2 kartus lengvesnė už grūdintą stiklą - apsaugo konstrukciją nuo per didelės apkrovos, gamtos stichijų ir cheminių medžiagų poveikio. Itin lengvai apdirbama, pjaustoma, montuojama ir formuojama. Nėra rizikos sugadinti transportuojant. 
-				</p>
-			</div>
-			<div class="wrap">
-				<div>
-					<img src="./src/img/alternative-1.jpeg" alt="img">
-				</div>
-				<div>
-					<img src="./src/img/alternative-2.jpeg" alt="img">
-				</div>
-			</div>
-			<div class="btn-holder">
-				<a href="#" class="btn">Katalogas</a>
-			</div>
-		</div>
-	</section>
+      <section class="alternative">
+        <div class="container">
+          <h2>NAUJOS KARTOS ALTERNATYVA GRŪDINTAM STIKLUI</h2>
+          <div class="content">
+            <p>
+              Monolitinis Polikarbonatas yra tvirčiausia skaidri medžiaga,
+              turinti itin platų panaudojimo spektrą – terasos, stoginės,
+              interjero elementai, balkonų stiklinimas, baldai, garso
+              izoliacijos ir saugumo instaliacijos. Trumpai tariant – ji pilnai
+              naudojama vietoj stiklo, plastiko ar kanalinio polikarbonato.
+              <br /><br />
+              Išvenkite sudėtingo montavimo, transportavimo ir broko rizikos,
+              gamyboje vietoje stiklo ar įprasto kanalinio polikarbonato
+              naudodami monolitino polikarbonato plokštes.
+              <br /><br />
+              Net 250 kartų tvirtesnė ir 2 kartus lengvesnė už grūdintą stiklą -
+              apsaugo konstrukciją nuo per didelės apkrovos, gamtos stichijų ir
+              cheminių medžiagų poveikio. Itin lengvai apdirbama, pjaustoma,
+              montuojama ir formuojama. Nėra rizikos sugadinti transportuojant.
+            </p>
+          </div>
+          <div class="wrap">
+            <div>
+              <img src="./src/img/alternative-1.jpeg" alt="img" />
+            </div>
+            <div>
+              <img src="./src/img/alternative-2.jpeg" alt="img" />
+            </div>
+          </div>
+          <div class="btn-holder">
+            <a href="#" class="btn">Katalogas</a>
+          </div>
+        </div>
+      </section>
 
-	<section class="benefits">
-		<div class="container">
-			<h2>Monolitinio Polikarbonato nauda</h2>
-			<ul>
-				<li>
-					<img src="./src/img/benefits-icon-1.svg" alt="icon">
-					Atsparus ekstremaliam gamtos ir cheminių medžiagų poveikiui.
-				</li>
-				<li>
-					<img src="./src/img/benefits-icon-2.svg" alt="icon">
-					Gali būtu skaidrus kaip stiklas, arba užtamsintas – bronzinis.
-				</li>
-				<li>
-					<img src="./src/img/benefits-icon-3.svg" alt="icon">
-					UV spindulių fitras - puikiai apsaugo žmones, baldus ir augalus nuo kenksmingo UV poveikio
-				</li>
-				<li>
-					<img src="./src/img/benefits-icon-4.svg" alt="icon">
-					Lengvai transportuojamas, apdirbamas ir montuojamas.
+      <section class="benefits">
+        <div class="container">
+          <h2>Monolitinio Polikarbonato nauda</h2>
+          <ul>
+            <li>
+              <img src="./src/img/benefits-icon-1.svg" alt="icon" />
+              Atsparus ekstremaliam gamtos ir cheminių medžiagų poveikiui.
+            </li>
+            <li>
+              <img src="./src/img/benefits-icon-2.svg" alt="icon" />
+              Gali būtu skaidrus kaip stiklas, arba užtamsintas – bronzinis.
+            </li>
+            <li>
+              <img src="./src/img/benefits-icon-3.svg" alt="icon" />
+              UV spindulių fitras - puikiai apsaugo žmones, baldus ir augalus
+              nuo kenksmingo UV poveikio
+            </li>
+            <li>
+              <img src="./src/img/benefits-icon-4.svg" alt="icon" />
+              Lengvai transportuojamas, apdirbamas ir montuojamas.
+            </li>
+            <li>
+              <img src="./src/img/benefits-icon-5.svg" alt="icon" />
+              250 kartų stipresnis už įprastą grūdintą stiklą.
+            </li>
+            <li>
+              <img src="./src/img/benefits-icon-6.svg" alt="icon" />
+              Pasižymi labai gera šilumos izoliacija.
+            </li>
+            <li>
+              <img src="./src/img/benefits-icon-7.svg" alt="icon" />
+              Puikus pasirinkimas apsaugai nuo vandalizmo.
+            </li>
+          </ul>
+        </div>
+      </section>
 
-				</li>
-				<li>
-					<img src="./src/img/benefits-icon-5.svg" alt="icon">
-					250 kartų stipresnis už įprastą grūdintą stiklą.
-				</li>
-				<li>
-					<img src="./src/img/benefits-icon-6.svg" alt="icon">
-					Pasižymi labai gera šilumos izoliacija.
-				</li>
-				<li>
-					<img src="./src/img/benefits-icon-7.svg" alt="icon">
-					Puikus pasirinkimas apsaugai nuo vandalizmo.
-				</li>
+      <section class="areas">
+        <div class="container">
+          <h2>Naudojimo sritys</h2>
+          <div class="slider">
+            <div class="slide">
+              <div class="top">
+                <img class="thumb" src="./src/img/area-1.jpeg" alt="" />
+                <div class="content">
+                  <div>
+                    <h4>Biuro pertvaros</h4>
+                    <p>
+                      Monolitinis Polikarbonatas – puikus, naujoviškas
+                      sprendimas modernaus biuro įrengimui.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="more">
+                Skaityti daugiau
+                <img src="./src/img/slider-arrow-more.svg" alt="read more" />
+              </div>
+            </div>
+            <div class="slide">
+              <div class="top">
+                <img class="thumb" src="./src/img/area-2.jpeg" alt="" />
+                <div class="content">
+                  <div>
+                    <h4>Stoginių, terasų ir balkonų stiklinimas</h4>
+                    <p>
+                      Monolitinis polikarbonatas yra plačiai naudojamas statybos
+                      sektoriuje.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="more">
+                Skaityti daugiau
+                <img src="./src/img/slider-arrow-more.svg" alt="read more" />
+              </div>
+            </div>
+            <div class="slide">
+              <div class="top">
+                <img class="thumb" src="./src/img/area-3.jpeg" alt="" />
+                <div class="content">
+                  <div>
+                    <h4>Baldų gamyba</h4>
+                    <p>
+                      Įsigykite Premium klasės baldus iš monolitinio
+                      polikarbonato.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="more">
+                Skaityti daugiau
+                <img src="./src/img/slider-arrow-more.svg" alt="read more" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-			</ul>
-		</div>
-	</section>
+      <section class="text-video">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="title">Polikarbonatas - savybės ir privalumai</div>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Accusantium consectetur mollitia atque nemo officia pariatur
+                optio beatae, enim incidunt error officiis nesciunt. Officia,
+                explicabo. Eaque nihil harum velit debitis ut. Consectetur
+                tempore atque facilis repellat distinctio sit aliquid, iste
+                temporibus perspiciatis, minus laudantium fugit voluptate ab,
+                quos aspernatur tempora iure!
+              </p>
+            </div>
+            <div class="col">
+              <div class="aspect-ratio">
+                <iframe
+                  src="https://www.youtube.com/embed/YXDHI9vehWE"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-	<section class="areas">
-		<div class="container">
-			<h2>Naudojimo sritys</h2>
-			<div class="slider">
-				<div class="slide">
-					<div class="top">
-						<img class="thumb" src="./src/img/area-1.jpeg" alt="">
-						<div class="content">
-							<div>
-								<h4>Biuro pertvaros</h4>
-								<p>Monolitinis Polikarbonatas – puikus, naujoviškas sprendimas modernaus biuro įrengimui.</p>
-							</div>
-						</div>
-					</div>
-					<div class="more">
-						Skaityti daugiau
-						<img src="./src/img/slider-arrow-more.svg" alt="read more">
-					</div>
-				</div>
-				<div class="slide">
-					<div class="top">
-						<img class="thumb" src="./src/img/area-2.jpeg" alt="">
-						<div class="content">
-							<div>
-								<h4>Stoginių, terasų ir balkonų stiklinimas</h4>
-								<p>Monolitinis polikarbonatas yra plačiai naudojamas statybos sektoriuje.</p>
-							</div>
-						</div>
-					</div>
-					<div class="more">
-						Skaityti daugiau
-						<img src="./src/img/slider-arrow-more.svg" alt="read more">
-					</div>
-				</div>
-				<div class="slide">
-					<div class="top">
-						<img class="thumb" src="./src/img/area-3.jpeg" alt="">
-						<div class="content">
-							<div>
-								<h4>Baldų gamyba</h4>
-								<p>Įsigykite Premium klasės baldus iš monolitinio polikarbonato.</p>
-							</div>
-						</div>
-					</div>
-					<div class="more">
-						Skaityti daugiau
-						<img src="./src/img/slider-arrow-more.svg" alt="read more">
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+      <section class="partner">
+        <h2>TAPKITE MŪSŲ PARTNERIU</h2>
+        <div class="container">
+          <div class="wrap">
+            <div class="front">
+              <div class="image">
+                <img src="./src/img/partner.png" alt="partner" />
+              </div>
+              <div class="content">
+                <p>
+                  Išsiskirkite iš savo konkurentų pasiūlydami naujos kartos
+                  produktą. Visame pasaulyje monolitinis polikarbonatas
+                  pradedamas naudoti vis plačiau, todėl nepraleiskite šanso.
+                </p>
+                <ul>
+                  <li>
+                    <img src="./src/img/check.svg" alt="check" />
+                    LENGVA MONTUOTI
+                  </li>
+                  <li>
+                    <img src="./src/img/check.svg" alt="check" />
+                    LENGVA TRANSPORTUOTI
+                  </li>
+                  <li>
+                    <img src="./src/img/check.svg" alt="check" />
+                    paklausU tarp klientų
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-	<section class="text-video">
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					<div class="title">Polikarbonatas - savybės ir privalumai</div>
-					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium consectetur mollitia atque nemo officia pariatur optio beatae, enim incidunt error officiis nesciunt. Officia, explicabo. Eaque nihil harum velit debitis ut. Consectetur tempore atque facilis repellat distinctio sit aliquid, iste temporibus perspiciatis, minus laudantium fugit voluptate ab, quos aspernatur tempora iure!</p>
-				</div>
-				<div class="col">
-					<div class="aspect-ratio">
-						<iframe  src="https://www.youtube.com/embed/YXDHI9vehWE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+      <section class="contact">
+        <div class="container">
+          <h2>SUSISIEKITE SU MUMIS</h2>
+          <p>
+            Susisiekite su mumis – visada patarsime ir pakonsultuosime. Perkant
+            didesniais kiekiais, ar susitarus dėl nuolatinio bendradarbiavimo,
+            visada pasiūlysime jums geresnes kainas ir sąlygas. Kurkime
+            ilgalaikį ryšį kartu!
+          </p>
+          <div class="row">
+            <div class="col">
+              <div class="input-wrap">
+                <label for="name">Vardas</label>
+                <input type="text" id="name" />
+              </div>
+              <div class="input-wrap">
+                <label for="email">El. paštas</label>
+                <input type="email" id="email" />
+              </div>
+              <div class="input-wrap">
+                <label for="message">Komentaras</label>
+                <textarea name="" id="message" cols="30" rows="10"></textarea>
+              </div>
+              <div class="btn-holder">
+                <button class="btn">Siųsti</button>
+              </div>
+            </div>
+            <div class="col">
+              <img src="./src/img/contact.jpeg" alt="contact" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
 
-	<section class="partner">
-		<h2>TAPKITE MŪSŲ PARTNERIU</h2>
-		<div class="container">
-			<div class="wrap">
-				<div class="image">
-					<img src="./src/img/partner.png" alt="partner">
-				</div>
-				<div class="content">
-					<p>Išsiskirkite iš savo konkurentų pasiūlydami naujos kartos produktą. Visame pasaulyje monolitinis polikarbonatas pradedamas naudoti vis plačiau, todėl nepraleiskite šanso.</p>
-					<ul>
-						<li>
-							<img src="./src/img/check.svg" alt="check">
-							LENGVA MONTUOTI
-						</li>
-						<li>
-							<img src="./src/img/check.svg" alt="check">
-							LENGVA TRANSPORTUOTI
-						</li>
-						<li>
-							<img src="./src/img/check.svg" alt="check">
-							paklausU tarp klientų
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</section>
-	
-  <script src="build/js/script.js"></script>
-</body>
+    <footer>
+      <div class="container">
+        <div class="wrap">
+          <div class="nav">
+            <div class="logo">
+              <img src="./src/img/logo.svg" alt="logo" />
+            </div>
+            <ul>
+              <li><a href="">Pagrindinis</a></li>
+              <li><a href="">Prekės</a></li>
+              <li><a href="">Kontaktai</a></li>
+            </ul>
+          </div>
+          <div class="contacts">
+            <ul>
+              <li>
+                <a href="#"
+                  ><img src="./src/img/fb.svg" alt="fb" />Sekite mus Facebook</a
+                >
+              </li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="build/js/script.js"></script>
+  </body>
 </html>
