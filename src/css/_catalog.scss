@@ -55,6 +55,10 @@
       }
     }
     .top {
+      margin-bottom: 5rem;
+      @include phone {
+        margin-bottom: 2rem;
+      }
       .row {
         @include phone {
           flex-direction: column-reverse;
@@ -107,15 +111,67 @@
       }
     }
     .tables {
-      .row {
-        flex-wrap: wrap;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 0 -1.5rem;
+      @include phone {
+        display: block;
+      }
+      &-title {
+        font-size: 2.6rem;
+        margin-bottom: 1.5rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        @include phone {
+          text-align: center;
+          font-size: 1.8rem;
+          margin-bottom: 3rem;
+        }
+      }
+      &-more {
+        display: none;
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: $primary;
+        flex-direction: column;
+        margin-bottom: 2.5rem;
+        @include phone {
+          @include center;
+        }
+        img {
+          width: 1.5rem;
+          margin-top: 1rem;
+        }
+        .rotate {
+          transform: rotate(180deg);
+        }
       }
     }
     .table {
-      width: 50%;
       border-radius: 1.5rem;
       overflow: hidden;
       border: 1px solid #cfcfcf;
+      &-holder {
+        max-width: 57rem;
+        width: 50%;
+        padding: 0 1.5rem;
+        margin-bottom: 6rem;
+        &--show {
+          display: block !important;
+        }
+        &:not(:first-of-type) {
+          @include phone {
+            display: none;
+          }
+        }
+        @include phone {
+          max-width: 50rem;
+          width: 100%;
+          margin: 0 auto;
+          margin-bottom: 2rem;
+        }
+      }
       .title {
         padding: 1.5rem 0;
         font-size: 2.2rem;
@@ -123,6 +179,10 @@
         text-align: center;
         background-color: #4983f4;
         color: #fff;
+        @include phone {
+          padding: 1.2rem 0;
+          font-size: 1.6rem;
+        }
       }
       .content {
         li {
@@ -141,9 +201,46 @@
             &:first-of-type {
               border-right: 1px solid #d7d7d7;
             }
+            @include phone {
+              padding: 1.2rem 0;
+              font-size: 1.6rem;
+            }
           }
         }
       }
+    }
+    .images {
+      @include center;
+      margin-bottom: 4rem;
+      @include phone {
+        flex-direction: column;
+        margin-bottom: 2rem;
+      }
+      div {
+        width: 33.33%;
+        border-radius: 1.5rem;
+        position: relative;
+        overflow: hidden;
+        @include phone {
+          max-width: 50rem;
+          margin: 0 auto;
+          width: auto;
+        }
+        @media (max-width: 500px) {
+          margin: 0 -1.5rem;
+          border-radius: 0;
+        }
+        &:not(:last-of-type) {
+          margin-right: 2rem;
+          @include phone {
+            margin: 0 -1.5rem;
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+    .btn-holder {
+      @include center;
     }
   }
 }

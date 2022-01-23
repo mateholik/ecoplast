@@ -1,0 +1,94 @@
+.contact {
+  .hero {
+    padding: 21.5rem 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    @include phone {
+      padding: 4.2rem 0;
+      min-height: 25rem;
+      @include center;
+    }
+    h1 {
+      font-weight: 700;
+      font-size: 6.4rem;
+      line-height: 8.2rem;
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #fff;
+      @include phone {
+        font-size: 2.6rem;
+        line-height: 3.2rem;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+  .contact {
+    margin-top: 7rem;
+    .contacts {
+      margin-bottom: 2.5rem;
+      a {
+        @include center(flex-start);
+        font-size: 1.8rem;
+        font-weight: 500;
+        margin-bottom: 1.5rem;
+        color: #222;
+        @include phone {
+          font-size: 1.4rem;
+        }
+        img {
+          width: 2rem;
+          margin-right: 1rem;
+        }
+      }
+    }
+    p {
+      font-size: 1.8rem;
+      margin-bottom: 4rem;
+      text-align: justify;
+      @include phone {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+      }
+    }
+    .row {
+      display: flex;
+      @include phone {
+        flex-direction: column-reverse;
+      }
+      .col {
+        width: 100%;
+        &:first-of-type {
+          margin-right: 10%;
+        }
+        &:last-of-type {
+          @include phone {
+            max-width: 50rem;
+            width: auto;
+            margin: 0 auto;
+            margin-bottom: 2rem;
+          }
+          @media (max-width: 500px) {
+            margin: 0 -1.5rem;
+            border-radius: 0;
+            margin-bottom: 2rem;
+          }
+          img {
+            border-radius: 1.5rem;
+            overflow: hidden;
+            @media (max-width: 500px) {
+              border-radius: 0;
+            }
+          }
+        }
+      }
+      .btn-holder {
+        @include phone {
+          margin-top: 2rem;
+          @include center;
+        }
+      }
+    }
+  }
+}
