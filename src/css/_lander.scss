@@ -168,6 +168,12 @@
         transform: translateX(-50%) translateY(-50%);
         z-index: 1;
         padding: 0;
+        .arrow {
+          transform: translateX(calc(-100% - 1.4rem));
+          &--right {
+            transform: translateX(calc(100% + 1.4rem)) rotate(180deg);
+          }
+        }
       }
     }
     ul {

@@ -10,6 +10,21 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.css"
+      integrity="sha512-ShLuspGzRsTiMlQ2Rg0e+atjy/gVQr3oYKnKmQkHQ6sxcnDAEOtOaPz2rRmeygV2CtnwUawDyHkGgH4zUbP3Hw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.theme.min.css"
+      integrity="sha512-wCwx+DYp8LDIaTem/rpXubV/C1WiNRsEVqoztV0NZm8tiTvsUeSlA/Uz02VTGSiqfzAHD4RnqVoevMcRZgYEcQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="stylesheet" href="build/css/style.css" />
     <title>Document</title>
   </head>
@@ -202,179 +217,181 @@
       <section class="areas">
         <div class="container">
           <h2>Naudojimo sritys</h2>
-          <div id="areasSLider" class="glide slider">
-            <div class="slider--arrows" data-glide-el="controls">
-              <div class="arrow arrow--left" data-glide-dir="<">
-                <img src="./src/img/slider-arrow.svg" alt="arrow left" />
+          <div class="slider">
+            <div id="areasSLider" class="glide">
+              <div class="slider--arrows" data-glide-el="controls">
+                <div class="arrow arrow--left" data-glide-dir="<">
+                  <img src="./src/img/slider-arrow.svg" alt="arrow left" />
+                </div>
+                <div class="arrow arrow--right" data-glide-dir=">">
+                  <img src="./src/img/slider-arrow.svg" alt="arrow right" />
+                </div>
               </div>
-              <div class="arrow arrow--right" data-glide-dir=">">
-                <img src="./src/img/slider-arrow.svg" alt="arrow right" />
+              <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                  <li class="glide__slide">
+                    <div class="slide">
+                      <div class="top">
+                        <img class="thumb" src="./src/img/area-1.jpeg" alt="" />
+                        <div class="content">
+                          <div>
+                            <h4>Biuro pertvaros</h4>
+                            <p>
+                              Monolitinis Polikarbonatas – puikus, naujoviškas
+                              sprendimas modernaus biuro įrengimui.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="more">
+                        Skaityti daugiau
+                        <img
+                          src="./src/img/slider-arrow-more.svg"
+                          alt="read more"
+                        />
+                      </div>
+                    </div>
+                  </li>
+                  <li class="glide__slide">
+                    <div class="slide">
+                      <div class="top">
+                        <img class="thumb" src="./src/img/area-2.jpeg" alt="" />
+                        <div class="content">
+                          <div>
+                            <h4>Stoginių, terasų ir balkonų stiklinimas</h4>
+                            <p>
+                              Monolitinis polikarbonatas yra plačiai naudojamas
+                              statybos sektoriuje.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="more">
+                        Skaityti daugiau
+                        <img
+                          src="./src/img/slider-arrow-more.svg"
+                          alt="read more"
+                        />
+                      </div>
+                    </div>
+                  </li>
+                  <li class="glide__slide">
+                    <div class="slide">
+                      <div class="top">
+                        <img class="thumb" src="./src/img/area-3.jpeg" alt="" />
+                        <div class="content">
+                          <div>
+                            <h4>Baldų gamyba</h4>
+                            <p>
+                              Įsigykite Premium klasės baldus iš monolitinio
+                              polikarbonato.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="more">
+                        Skaityti daugiau
+                        <img
+                          src="./src/img/slider-arrow-more.svg"
+                          alt="read more"
+                        />
+                      </div>
+                    </div>
+                  </li>
+                  <li class="glide__slide">
+                    <div class="slide">
+                      <div class="top">
+                        <img class="thumb" src="./src/img/area-4.jpeg" alt="" />
+                        <div class="content">
+                          <div>
+                            <h4>Saugumo instaliacijos</h4>
+                            <p>
+                              Monolitinis Polikarbonatas pasižymi ypatingu
+                              tvirtumu ir atsparumu smūgiams
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="more">
+                        Skaityti daugiau
+                        <img
+                          src="./src/img/slider-arrow-more.svg"
+                          alt="read more"
+                        />
+                      </div>
+                    </div>
+                  </li>
+                  <li class="glide__slide">
+                    <div class="slide">
+                      <div class="top">
+                        <img class="thumb" src="./src/img/area-5.jpeg" alt="" />
+                        <div class="content">
+                          <div>
+                            <h4>Barjerai COVID-19 prevencijai</h4>
+                            <p>
+                              Puikiai tinkamas barjerams tarp klientų kavinėse,
+                              parduotuvėse, ir kitose paslaugų teikimo vietose
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="more">
+                        Skaityti daugiau
+                        <img
+                          src="./src/img/slider-arrow-more.svg"
+                          alt="read more"
+                        />
+                      </div>
+                    </div>
+                  </li>
+                  <li class="glide__slide">
+                    <div class="slide">
+                      <div class="top">
+                        <img class="thumb" src="./src/img/area-6.jpeg" alt="" />
+                        <div class="content">
+                          <div>
+                            <h4>Namų interjeras</h4>
+                            <p>
+                              Įsigykite moderniai atrodančias sieneles laiptams
+                              bei pertvaras tarp kambarių
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="more">
+                        Skaityti daugiau
+                        <img
+                          src="./src/img/slider-arrow-more.svg"
+                          alt="read more"
+                        />
+                      </div>
+                    </div>
+                  </li>
+                  <li class="glide__slide">
+                    <div class="slide">
+                      <div class="top">
+                        <img class="thumb" src="./src/img/area-7.jpeg" alt="" />
+                        <div class="content">
+                          <div>
+                            <h4>Vonios Kambarys</h4>
+                            <p>
+                              Tinkamas modernių ir patvarių dušo kabinų gamybai.
+                              Lengvai išgaunama išgaubta forma
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="more">
+                        Skaityti daugiau
+                        <img
+                          src="./src/img/slider-arrow-more.svg"
+                          alt="read more"
+                        />
+                      </div>
+                    </div>
+                  </li>
+                </ul>
               </div>
-            </div>
-            <div class="glide__track" data-glide-el="track">
-              <ul class="glide__slides">
-                <li class="glide__slide">
-                  <div class="slide">
-                    <div class="top">
-                      <img class="thumb" src="./src/img/area-1.jpeg" alt="" />
-                      <div class="content">
-                        <div>
-                          <h4>Biuro pertvaros</h4>
-                          <p>
-                            Monolitinis Polikarbonatas – puikus, naujoviškas
-                            sprendimas modernaus biuro įrengimui.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="more">
-                      Skaityti daugiau
-                      <img
-                        src="./src/img/slider-arrow-more.svg"
-                        alt="read more"
-                      />
-                    </div>
-                  </div>
-                </li>
-                <li class="glide__slide">
-                  <div class="slide">
-                    <div class="top">
-                      <img class="thumb" src="./src/img/area-2.jpeg" alt="" />
-                      <div class="content">
-                        <div>
-                          <h4>Stoginių, terasų ir balkonų stiklinimas</h4>
-                          <p>
-                            Monolitinis polikarbonatas yra plačiai naudojamas
-                            statybos sektoriuje.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="more">
-                      Skaityti daugiau
-                      <img
-                        src="./src/img/slider-arrow-more.svg"
-                        alt="read more"
-                      />
-                    </div>
-                  </div>
-                </li>
-                <li class="glide__slide">
-                  <div class="slide">
-                    <div class="top">
-                      <img class="thumb" src="./src/img/area-3.jpeg" alt="" />
-                      <div class="content">
-                        <div>
-                          <h4>Baldų gamyba</h4>
-                          <p>
-                            Įsigykite Premium klasės baldus iš monolitinio
-                            polikarbonato.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="more">
-                      Skaityti daugiau
-                      <img
-                        src="./src/img/slider-arrow-more.svg"
-                        alt="read more"
-                      />
-                    </div>
-                  </div>
-                </li>
-                <li class="glide__slide">
-                  <div class="slide">
-                    <div class="top">
-                      <img class="thumb" src="./src/img/area-4.jpeg" alt="" />
-                      <div class="content">
-                        <div>
-                          <h4>Saugumo instaliacijos</h4>
-                          <p>
-                            Monolitinis Polikarbonatas pasižymi ypatingu
-                            tvirtumu ir atsparumu smūgiams
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="more">
-                      Skaityti daugiau
-                      <img
-                        src="./src/img/slider-arrow-more.svg"
-                        alt="read more"
-                      />
-                    </div>
-                  </div>
-                </li>
-                <li class="glide__slide">
-                  <div class="slide">
-                    <div class="top">
-                      <img class="thumb" src="./src/img/area-5.jpeg" alt="" />
-                      <div class="content">
-                        <div>
-                          <h4>Barjerai COVID-19 prevencijai</h4>
-                          <p>
-                            Puikiai tinkamas barjerams tarp klientų kavinėse,
-                            parduotuvėse, ir kitose paslaugų teikimo vietose
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="more">
-                      Skaityti daugiau
-                      <img
-                        src="./src/img/slider-arrow-more.svg"
-                        alt="read more"
-                      />
-                    </div>
-                  </div>
-                </li>
-                <li class="glide__slide">
-                  <div class="slide">
-                    <div class="top">
-                      <img class="thumb" src="./src/img/area-6.jpeg" alt="" />
-                      <div class="content">
-                        <div>
-                          <h4>Namų interjeras</h4>
-                          <p>
-                            Įsigykite moderniai atrodančias sieneles laiptams
-                            bei pertvaras tarp kambarių
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="more">
-                      Skaityti daugiau
-                      <img
-                        src="./src/img/slider-arrow-more.svg"
-                        alt="read more"
-                      />
-                    </div>
-                  </div>
-                </li>
-                <li class="glide__slide">
-                  <div class="slide">
-                    <div class="top">
-                      <img class="thumb" src="./src/img/area-7.jpeg" alt="" />
-                      <div class="content">
-                        <div>
-                          <h4>Vonios Kambarys</h4>
-                          <p>
-                            Tinkamas modernių ir patvarių dušo kabinų gamybai.
-                            Lengvai išgaunama išgaubta forma
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="more">
-                      Skaityti daugiau
-                      <img
-                        src="./src/img/slider-arrow-more.svg"
-                        alt="read more"
-                      />
-                    </div>
-                  </div>
-                </li>
-              </ul>
             </div>
           </div>
         </div>
@@ -524,7 +541,12 @@
         <p>Ecoplast © 2022 - Visos teisės saugomos</p>
       </div>
     </section>
-    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/glide.min.js"
+      integrity="sha512-IkLiryZhI6G4pnA3bBZzYCT9Ewk87U4DGEOz+TnRD3MrKqaUitt+ssHgn2X/sxoM7FxCP/ROUp6wcxjH/GcI5Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="build/js/script.js"></script>
   </body>
 </html>
