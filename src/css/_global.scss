@@ -20,6 +20,7 @@ $hamburger-layer-border-radius: 0;
   @include phone {
     font-size: 2.2rem;
     margin-bottom: 2rem;
+    line-height: 3rem;
   }
 }
 @mixin sectionSpacing {
@@ -89,11 +90,12 @@ section {
 }
 .slider {
   &--arrows {
+    @include center(space-between);
     position: absolute;
     width: 100%;
-    .container {
-      @include center(space-between);
-    }
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
     .arrow {
       width: 4.6rem;
       height: 4.6rem;
@@ -126,15 +128,16 @@ section {
       border-radius: 100%;
       background: #fff;
       margin-right: 1.5rem;
+      transition: 0.2s;
       cursor: pointer;
-      &--active {
-        background: $primary;
-      }
       @include phone {
         width: 0.8rem;
         height: 0.8rem;
         margin-right: 1rem;
       }
+    }
+    .glide__bullet--active {
+      background: $primary;
     }
   }
 }
@@ -175,6 +178,9 @@ section {
 header {
   background: $primary;
   height: 6rem;
+  @include phone {
+    height: 5rem;
+  }
   .container {
     height: 100%;
     @include phone {
@@ -213,19 +219,36 @@ header {
       a {
         color: white;
         font-size: 1.8rem;
-        font-weight: 700;
+        font-weight: 600;
+        position: relative;
+        display: block;
+        &:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -0.5rem;
+          width: 0%;
+          background: #fff;
+          transition: 0.4s;
+          height: 0.2rem;
+        }
+        &:hover {
+          &:before {
+            width: 100%;
+          }
+        }
       }
     }
   }
   nav.mobile {
     position: absolute;
-    top: 6rem;
+    top: 5rem;
     left: 0;
     background: $primary;
     display: none;
     width: 100%;
     z-index: 2;
-    transform: translateY(calc(-100% - 6rem));
+    transform: translateY(calc(-100% - 5rem));
     transition: 0.2s ease-in-out;
     @include phone {
       display: block;
@@ -233,12 +256,13 @@ header {
     ul {
       a {
         color: white;
-        font-size: 1.8rem;
-        font-weight: 700;
+        font-size: 1.4rem;
+        font-weight: 600;
         border-top: 0.8px solid #fff;
-        padding: 0 1.5rem;
-        padding: 1.6rem 1.5rem;
+        padding: 1.7rem 1.5rem;
         display: block;
+        background: #6e9cf6;
+        line-height: 1;
       }
     }
   }
