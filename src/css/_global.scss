@@ -203,6 +203,7 @@ header {
     display: none;
     @include phone {
       display: block;
+      padding: 0;
     }
   }
   nav.desktop {
@@ -327,12 +328,15 @@ footer {
 }
 
 .copyryght {
-  padding: 30px 0;
+  padding: 3rem 0;
   background: #000c2d;
   margin-bottom: 0;
   p {
-    font-size: 16px;
+    font-size: 1.6rem;
     color: #ffffff;
     text-align: center;
+    @include phone {
+      font-size: 1.2rem;
+    }
   }
 }
